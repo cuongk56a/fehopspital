@@ -1,0 +1,94 @@
+/* CSS for Doctor Info and Booking Section */
+.doctor-info-booking {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+
+.doctor-info {
+    /* text-align: center; */
+    /* align-items: center; */
+    /* display: flex; */
+    /* margin: 0; */
+    /* border: solid 2px; */
+    margin-bottom: 20px;
+}
+
+.doctor-info img {
+    align-items: center;
+    border-radius: 50%;
+    max-width: 250px;
+    margin-bottom: 100px;
+}
+
+.doctor-info h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.doctor-info p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.booking-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.booking-form h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive layout for Doctor Info and Booking Section */
+@media (min-width: 768px) {
+    .doctor-info-booking {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .doctor-info {
+        flex: 0 0 48%;
+    }
+
+    .booking-form {
+        flex: 0 0 48%;
+        margin-top: 0;
+    }
+}
