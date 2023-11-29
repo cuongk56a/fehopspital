@@ -34,7 +34,7 @@ Version:	1.1
 =========================================*/ 
 (function($) {
     "use strict";
-     $(document).on('ready', function() {
+    $(document).on('ready', function() {
 	
         jQuery(window).on('scroll', function() {
 			if ($(this).scrollTop() > 200) {
@@ -296,8 +296,8 @@ Version:	1.1
 			Stellar JS
 		=========================*/
 		$.stellar({
-		  horizontalOffset: 0,
-		  verticalOffset: 0
+			horizontalOffset: 0,
+			verticalOffset: 0
 		});
 
 		/*====================

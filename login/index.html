@@ -10,7 +10,7 @@
     <body>
         <div class="container" id="container">
             <div class="form-container sign-up-container">
-                <form action="#">
+                <form action="#" class="form-data">
                     <h1>Tạo tài khoản</h1>
                     <div class="social-container">
                         <a href="#" class="social"
@@ -25,13 +25,18 @@
                     </div>
                     <span>hoặc sử dụng email của bạn để đăng ký</span>
                     <input type="text" placeholder="Tên" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Mật khẩu" />
-                    <button>Đăng ký</button>
+                    <input type="email" placeholder="Email" id="email" />
+                    <input
+                        type="password"
+                        placeholder="Mật khẩu"
+                        id="password"
+                    />
+                    <button type="submit">Đăng ký</button>
+                    <a href="../home/index.html">Trang chủ</a>
                 </form>
             </div>
             <div class="form-container sign-in-container">
-                <form action="#">
+                <form action="#" class="form-login">
                     <h1>Đăng nhập</h1>
                     <div class="social-container">
                         <a href="#" class="social"
@@ -45,10 +50,15 @@
                         ></a>
                     </div>
                     <span>hoặc sử dụng tài khoản của bạn</span>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Mật khẩu" />
-                    <a href="#">Quên mật khẩu?</a>
-                    <button>Đăng nhập</button>
+                    <input type="email" placeholder="Email" id="email-login" />
+                    <input
+                        type="password"
+                        placeholder="Mật khẩu"
+                        id="password-login"
+                    />
+                    <br />
+                    <button type="submit">Đăng nhập</button>
+                    <a href="../home/index.html">Trang chủ</a>
                 </form>
             </div>
             <div class="overlay-container">
@@ -56,15 +66,16 @@
                     <div class="overlay-panel overlay-left">
                         <h1>Xin Chào!</h1>
                         <p>
-                            Để duy trì kết nối vui lòng đăng nhập bằng 
-							thông tin cá nhân của bạn
+                            Để duy trì kết nối vui lòng đăng nhập bằng thông tin
+                            cá nhân của bạn
                         </p>
                         <button class="ghost" id="signIn">Đăng nhập</button>
                     </div>
                     <div class="overlay-panel overlay-right">
                         <h1>Chào, Bạn!</h1>
                         <p>
-                            Hãy đăng ký thông tin cá nhân của bạn và bắt đầu trải nghiệm dịch vụ
+                            Hãy đăng ký thông tin cá nhân của bạn và bắt đầu
+                            trải nghiệm dịch vụ
                         </p>
                         <button class="ghost" id="signUp">Đăng ký</button>
                     </div>
