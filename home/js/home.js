@@ -6,11 +6,10 @@ const getDoctor = async () => {
         const doctors = await response.json();
         console.log(doctors);
         doctors.forEach((doctor) => {
-            const doctorElement = document.createElement("a");
+            const doctorElement = document.createElement("div");
             doctorElement.href = `./doctor.html?id=${doctor.id}`;
             doctorElement.classList.add("btn");
             doctorElement.textContent;
-            // document.getElementsById("myDiv").appendChild(doctorElement);
             document.getElementById("myDiv").appendChild(doctorElement);
         });
     } catch (error) {
