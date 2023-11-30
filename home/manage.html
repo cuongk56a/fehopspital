@@ -96,7 +96,7 @@
                                 <!-- Main Menu -->
                                 <div class="main-menu">
                                     <nav class="navigation">
-                                        <ul class="nav menu">
+                                        <ul class="nav menu" id="myUl">
                                             <li>
                                                 <a href="./index.html"
                                                     >Trang chủ</a
@@ -153,11 +153,11 @@
                 <div class="bread-inner">
                     <div class="row">
                         <div class="col-12">
-                            <h2>Thông tin bác sĩ</h2>
+                            <h2>Quản lí đặt lịch</h2>
                             <ul class="bread-list">
                                 <li><a href="index.html">Trang chủ</a></li>
                                 <li><i class="icofont-simple-right"></i></li>
-                                <li class="active">Bác sĩ</li>
+                                <li class="active">Quản lí</li>
                             </ul>
                         </div>
                     </div>
@@ -166,97 +166,52 @@
         </div>
         <!-- End Breadcrumbs -->
 
-        <!-- Start Doctor Info and Booking Section -->
-        <section class="doctor-info-booking section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Doctor Info -->
-                        <div class="doctor-info form-row">
-                            <div class="col-sm-3">
-                                <img src="img/author2.jpg" alt="Doctor Image" />
-                            </div>
-                            <div class="col-sm-9" id="myDoctor">
-                                <!-- Thêm thông tin khác về bác sĩ nếu cần -->
-                            </div>
-                        </div>
-                        <!-- Booking Form -->
-                        <div class="booking-form">
-                            <h2>Đặt lịch hẹn</h2>
-                            <p>
-                                (Vui lòng chọn lịch cách thời gian hiện tại 1
-                                ngày)
-                            </p>
-                            <form action="#" class="form-submit">
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="">Họ tên</label>
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            id="inputName"
-                                            placeholder="Vui lòng nhập họ tên"
-                                            required
-                                        />
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-8">
-                                        <label for="">Số điện thoại</label>
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            id="inputPhone"
-                                            placeholder="Vui lòng nhập số điện thoại"
-                                            required
-                                        />
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="">Tuổi</label>
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            id="inputAge"
-                                            placeholder="Vui lòng nhập tuổi"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Địa chỉ</label>
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        id="inputAddress"
-                                        placeholder="Vui lòng nhập địa chỉ"
-                                    />
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-sm-4">
-                                        <label for="">Thời gian</label>
-                                        <input
-                                            type="time"
-                                            class="form-control"
-                                            id="inputTime"
-                                            placeholder="Vui lòng nhập thời gian"
-                                        />
-                                    </div>
-                                    <div class="form-group col-sm-8">
-                                        <label for="appointment-date"
-                                            >Chọn ngày hẹn:</label
-                                        >
-                                        <input type="date" id="inputDate" required />
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn btn-primary">
-                                    Đặt lịch
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Doctor Info and Booking Section -->
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Tên</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Số điện thoại</th>
+                    <th scope="col">Địa chỉ</th>
+                    <th scope="col">Thời gian</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+            </tbody>
+        </table>
 
         <!-- Footer Area -->
         <footer id="footer" class="footer">
@@ -499,8 +454,6 @@
         <!-- Main JS -->
         <script src="js/main.js"></script>
         <script src="js/checkLogin.js"></script>
-        <script src="js/submit.js"></script>
-        <script src="js/doctor.js"></script>
         <script src="./js/manage.js"></script>
     </body>
 </html>

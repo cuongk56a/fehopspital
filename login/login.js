@@ -26,13 +26,19 @@ const createUser = async (email, password, api, navigate = false) => {
             },
         });
         const data = await res.json();
-
+        console.log(data);
         if (!navigate) {
             alert("Tạo tài khoản thành công");
             window.location.reload();
         } else {
-            localStorage.setItem("login", data.access_token);
-            location.href = "/home/index.html";
+            if (res.ok) {
+                localStorage.setItem("login", data.access_token);
+                localStorage.setItem("id", data.payload.sub);
+                localStorage.setItem("role", data.payload.role);
+                location.href = "/home/index.html";
+            } else {
+                alert("Email hoặc password không chính xác");
+            }
         }
     } catch (error) {
         console.log(error);
@@ -65,9 +71,9 @@ formLogin.addEventListener("submit", (e) => {
     const valueInputEmail = inputEmail.value;
     const valueInputPassword = inputPassword.value;
 
-    // if (valueInputEmail.trim() === "" || valueInputPassword.trim() === "") {
-    //     alert("Email hoặc password không chính xác");
-    //     return;
-    // }
+    if (valueInputEmail.trim() === "" || valueInputPassword.trim() === "") {
+        alert("Email hoặc password không được để trống");
+        return;
+    }
     createUser(valueInputEmail, valueInputPassword, apiSignin, true);
 });

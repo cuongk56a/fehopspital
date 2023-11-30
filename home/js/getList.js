@@ -1,4 +1,7 @@
-const apiDoctor = "https://behospital.onrender.com/doctor";
+const urlParams = new URLSearchParams(window.location.search);
+const doctorId = urlParams.get("id");
+
+const apiDoctor = `https://behospital.onrender.com/doctor/${doctorId}`;
 
 const container = document.querySelector("#myDiv");
 const arrayImage = ['img/pf3.jpg','img/about-img.jpg', 'img/author1.jpg', 'img/author2.jpg', 'img/author3.jpg','img/mission-img.jpg']
